@@ -1,0 +1,35 @@
+.half {
+	width: 50%;
+	float: left;
+}
+.responsive {
+	max-width: 100%;
+	height: auto;
+}
+[data-aos] {
+	transition-duration: .5s;
+}
+
+[data-aos*="slide"] {
+	transition-property: transform;
+}
+
+[data-aos*="slide"].animate {
+	transform: translate(0, 0);
+}
+
+[data-aos*="slide-down"] {
+	transform: translate(0, 100%);
+}
+
+[data-aos*="slide-up"] {
+	transform: translate(0, -100%);
+}
+
+[data-aos*="slide-left"] {
+	transform: translate(100%, 0);
+}
+
+[data-aos*="slide-right"] {
+	transform: translate(-100%, 0);
+}
